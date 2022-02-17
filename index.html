@@ -1,14 +1,108 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" >
-        <title>My First Homepage</title>
-    </head>
-    <body>
-        <!-- This is a comment -->
-        <h1> Sainarendra Mugatha </h1>
-        <p>
-        <a href="assignment0.html"> assignment0</a>
-        </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Home Page</title>
+    <script src="https://kit.fontawesome.com/58b4d12122.js" crossorigin="anonymous"></script>
+    <style>
+     body {
+        background-color: rgb(32, 230, 14);
+         }
+    @media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+         }
+    } 
+    #myVideo {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        }
+    .viewport-header{
+        position: relative;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 200px;
+  left: 380px; 
+  color: hsl(0, 17%, 95%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+    } 
+    #h2{
+       font-size: 22px; 
+       position: fixed;
+       top: 270px;
+       left: 384px;
+    }   
+    #content1{
+       font-size: 12px; 
+       position: fixed;
+       top: 70px;
+       left: 1250px;
+       color: rgb(17, 17, 16);
+    }
+
+    #content2{
+       font-size: 12px; 
+       position: fixed;
+       top: 100px;
+       left: 1250px;
+       color: rgb(7, 7, 7);
+    }
+
+    #content3{
+       font-size: 12px; 
+       position: fixed;
+       top: 130px;
+       left: 1250px;
+       color: rgb(5, 5, 5);
+    }
+
+    #content4{
+       font-size: 12px; 
+       position: fixed;
+       top: 160px;
+       left: 1250px;
+       color: rgb(5, 5, 5);
+    }
+    </style>
+</head>
+<body>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="background video.mp4" type="video/mp4">
+        <source src="background video.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+    <div>
+      <div>  
+      <header class="viewport-header">
+        <h1>
+          Sai Narendra Mugatha  </br>
+          
+        </h1>
+        <p id="h2">This is my home page</p>
+        
+      </header>
+      </div>
+      <div>
+      <!-- <i class="fa-address-card" ></i> -->
+      
+      <i class="fa-solid fa-user" id="content1"> About me</i>
+      <i class="fa-solid fa-file" id="content2"> <a href="Sai Resume.pdf">Resume</a></i>
+      <i class="fa-solid fa-book" id="content3"> Education</i>
+      <i class="fa-solid fa-briefcase" id="content4"> Work</i>
+      </div>
+    </div>
+    
+</body>
+</html>
     </body>
 </html>
